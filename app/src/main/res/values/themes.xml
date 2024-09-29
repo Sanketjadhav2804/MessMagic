@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MessMagic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/statusbar</item>
+    </style>
+
+    <style name="Theme.MessMagic" parent="Base.Theme.MessMagic" />
+</resources>

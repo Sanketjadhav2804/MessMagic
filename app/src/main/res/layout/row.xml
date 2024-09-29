@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="20dp"
+    android:layout_margin="12dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        
+
+        
+        <RelativeLayout
+            android:id="@+id/exapndable_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+            android:id="@+id/mneuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu Name"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:textColor="@color/orange"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+
+            <ImageView
+                android:id="@+id/other"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mneuName"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_toStartOf="@id/other"
+                android:layout_toLeftOf="@id/other"
+                android:text="Menu Description"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/grey_font"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "570849353439",
+    "project_id": "messmagic-bd8bd",
+    "storage_bucket": "messmagic-bd8bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570849353439:android:d6b45b406223892b89536a",
+        "android_client_info": {
+          "package_name": "com.example.messmagic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTEv9IGjGc8csZSETkgvmTKZHOHQdrX2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

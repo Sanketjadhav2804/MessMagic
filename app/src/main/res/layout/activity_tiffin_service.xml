@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".TiffinServiceActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:paddingBottom="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/backarrow"
+                android:clickable="true"
+                android:background="?android:selectableItemBackgroundBorderless"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Tiffin service"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/backArrow"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey_font"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/backArrow" />
+
+            <TextView
+                android:id="@+id/exploreWeek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today's Menu"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textColor="@color/orange"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tiffinCardView"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/exploreWeek1">
+
+                <RelativeLayout
+                    android:id="@+id/exapndable_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/mneuName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Veg Thali"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:textColor="@color/orange"
+                        android:textSize="16sp"
+                        android:padding="16dp"/>
+
+
+                    <TextView
+                        android:id="@+id/menuDesciption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="chapati, bhaji,\ndaal, rice,\n\nTifiin Charge: Rs.80"
+                        android:layout_below="@+id/mneuName"
+                        android:fontFamily="@font/roboto_condensed_bold"
+
+                        android:textSize="14sp"
+                        android:padding="16dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/other"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:padding="16dp"
+                        android:src="@drawable/monthlymess"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:paddingStart="4dp"
+                android:text="MessMagic"
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tiffinCardView" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=" Date: "
+                android:textSize="16sp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/appName"
+                app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrlview"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <LinearLayout
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/edittextshape"
+                        android:drawableLeft="@drawable/user"
+                        android:drawablePadding="15dp"
+                        android:elevation="5dp"
+                        android:hint="Name"
+                        android:textSize="14sp"
+                        android:paddingStart="15dp" />
+
+                    <EditText
+                        android:id="@+id/emailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/edittextshape"
+                        android:drawableLeft="@drawable/mail"
+                        android:drawablePadding="15dp"
+                        android:elevation="5dp"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:textSize="14sp"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="15dp" />
+
+                    <EditText
+                        android:id="@+id/mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/edittextshape"
+                        android:drawableLeft="@drawable/baseline_phone_24"
+                        android:drawablePadding="15dp"
+                        android:elevation="5dp"
+                        android:ems="10"
+                        android:hint="Mobile"
+                        android:textSize="14sp"
+                        android:inputType="number"
+                        android:paddingStart="15dp" />
+
+                    <EditText
+                        android:id="@+id/people"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/edittextshape"
+                        android:drawableLeft="@drawable/count"
+                        android:drawablePadding="15dp"
+                        android:elevation="5dp"
+                        android:ems="10"
+                        android:hint="How many Tiffin you want?"
+                        android:inputType="number"
+                        android:paddingStart="15dp"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:padding="16dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/edittextshape"
+                        android:drawableLeft="@drawable/lock"
+                        android:drawablePadding="15dp"
+                        android:elevation="5dp"
+                        android:ems="10"
+                        android:hint="Time"
+                        android:textSize="14sp"
+                        android:paddingStart="15dp" />
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/greenbutton"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="Order"
+                android:clickable="true"
+                 android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/scrlview" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

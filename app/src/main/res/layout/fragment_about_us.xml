@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Fragment.AboutUsFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp"
+            >
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/backarrow"
+                android:clickable="true"
+                android:layout_margin="16dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/primaryInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/roboto_slab_bold"
+                android:text="About Us"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/backArrow"
+                app:layout_constraintTop_toTopOf="parent"  />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/backArrow" />
+
+
+
+            <!-- activity_about_us.xml -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+              >
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- App Overview -->
+                        <TextView
+                            android:id="@+id/textViewAppOverview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="App Overview"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MessMagic is an Android application designed to streamline and enhance the efficiency of mess management. The application provides a user-friendly interface for residents to view their menu schedules, take advantage of services like guest service and tiffin service, make online payments, and interact with the mess administration seamlessly."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Mission Statement -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mission Statement"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Our mission is to streamline and enhance mess management, providing a user-friendly interface for residents and seamless administration tools."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Team Information -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Team Information"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Meet the team behind MessMagic! Our dedicated team members are passionate about delivering the best mess management experience."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sanket Jadhav - Developer"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Contact Information -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Contact Information"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="For support inquiries or feedback, please contact us at support@messmagic.com."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+
+                        <!-- Privacy Policy -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Privacy Policy"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="View our privacy policy to learn about how we collect, use, and protect your personal information."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Terms of Service -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Terms of Service"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Read our terms of service for information on your rights and obligations when using the MessMagic app."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Version Information -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Version Information"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="MessMagic App Version 1.0 | Updated on 03/04/2024"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Acknowledgments -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Acknowledgments"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="We would like to thank the following individuals and organizations for their contributions to the MessMagic app."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Social Media Links -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Social Media Links"
+                            android:textStyle="bold"
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Follow us on social media for news, updates, and announcements!"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="16dp"/>
+
+                        <!-- Feedback and Reviews -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Feedback and Reviews"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="We value your feedback! Leave us a review or send us your thoughts at feedback@messmagic.com."
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginBottom="60dp"/>
+
+                    </LinearLayout>
+
+                    </ScrollView>
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+

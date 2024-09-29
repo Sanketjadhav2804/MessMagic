@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Menu"
+        android:id="@+id/menuFragment"
+        android:icon="@drawable/menu"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Orders"
+        android:id="@+id/orderFragment"
+        android:icon="@drawable/foodorder"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Account"
+        android:id="@+id/accountFragment"
+        android:icon="@drawable/user"
+        />
+</menu>

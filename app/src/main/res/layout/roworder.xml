@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="1dp"
+    android:backgroundTint="#ffffff"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    >
+
+    <RelativeLayout
+        android:id="@+id/userRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+
+        <ImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+
+
+
+        <TextView
+            android:id="@+id/userMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginEnd="20dp"
+
+            android:layout_toEndOf="@+id/userPhoto"
+
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:text="Mobile Number"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:id="@+id/tiffinNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiffin"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:layout_below="@id/userMobile"
+            android:layout_toEndOf="@+id/userPhoto"/>
+
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:layout_below="@id/tiffinNo"
+            android:layout_toEndOf="@+id/userPhoto"/>
+
+        <ImageView
+            android:id="@+id/dottedLine"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/time"
+            android:layout_toEndOf="@+id/userPhoto"
+
+            android:src="@drawable/dotted"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:layout_below="@id/dottedLine"
+            android:layout_toEndOf="@+id/userPhoto"/>
+
+
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_condensed_bold"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/dottedLine"/>
+
+        <ImageView
+            android:id="@+id/dottedLine1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/date"
+            android:layout_toEndOf="@+id/userPhoto"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/dotted"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:text="Order Pending"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/date"
+            android:layout_toEndOf="@+id/userPhoto"
+            android:background="@drawable/button_border_reject"
+            android:visibility="visible"
+            android:clickable="true"
+             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_border_success"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:text="Order Accepted"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:layout_below="@+id/date"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_border_reject"
+            android:padding="5dp"
+            android:text="Order Rejected"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_slab_bold"
+            android:textAllCaps="true"
+            android:layout_below="@+id/date"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#080808"
+            android:layout_below="@+id/button_reject"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

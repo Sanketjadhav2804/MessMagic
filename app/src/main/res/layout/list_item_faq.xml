@@ -1,0 +1,12 @@
+<!-- list_item_faq.xml -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/faqItemTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:fontFamily="@font/roboto_condensed_bold"
+    android:padding="16dp"
+    android:textSize="14sp"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+
+    android:background="?android:attr/selectableItemBackground" />
